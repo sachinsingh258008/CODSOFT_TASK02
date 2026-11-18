@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewly ☕ | Artisan Specialty Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Brewly<span>☕</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#features">Why Us</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact" class="nav-cta">Order Now</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="badge">Small-Batch Roasted Daily</span>
+        <h1>Wake Up to Coffee Crafted with Soul.</h1>
+        <p>
+          Ethically sourced single-origin beans roasted to perfection in small batches.
+          Experience rich aroma, velvety crema, and bold flavor in every cup.
+        </p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">Explore Roasts</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Arabica Beans</span>
+          </div>
+          <div class="stat">
+            <strong>4.9 ★</strong>
+            <span>Customer Rating</span>
+          </div>
+          <div class="stat">
+            <strong>24h</strong>
+            <span>Fresh Roast Dispatch</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="coffee-card">
+          <div class="cup-illustration">
+            <div class="steam">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="cup-top"></div>
+            <div class="cup-body">
+              <div class="cup-sleeve">BREWLY</div>
+            </div>
+            <div class="cup-saucer"></div>
+          </div>
+          <div class="floating-tag tag-top">🔥 Signature Espresso Blend</div>
+          <div class="floating-tag tag-bottom">🌱 Direct Trade • Organic</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-box main-box">
+          <h3>From High-Altitude Farms to Your Morning Mug</h3>
+          <p>Direct partnerships with family-owned farms in Ethiopia, Colombia, and Chikmagalur.</p>
+        </div>
+        <div class="about-box accent-box">
+          <span class="year">Est. 2021</span>
+          <p>Zero compromises on freshness, sustainability, or roast precision.</p>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-subtitle">Our Story</span>
+        <h2>We Believe Great Coffee Should Never Be Rushed</h2>
+        <p>
+          At Brewly, every batch is roasted in small quantities and rested just long enough
+          to unlock complex notes of dark chocolate, toasted hazelnut, and wild berries.
+        </p>
+        <p>
+          Whether you brew with a pour-over V60, French press, or espresso machine,
+          our beans are dialed in for effortless extraction at home.
+        </p>
+        <ul class="about-list">
+          <li>✓ Precision drum-roasted in micro-lots</li>
+          <li>✓ 100% compostable valve-sealed bags</li>
+          <li>✓ Ground fresh to your exact brew method</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="menu section bg-cream" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Featured Roasts</span>
+        <h2>Signature Coffee Collection</h2>
+        <p>Hand-picked favorites loved by espresso enthusiasts and filter coffee fans alike.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-badge">Bestseller</div>
+          <div class="product-icon">☕</div>
+          <h3>Velvet Midnight Espresso</h3>
+          <p class="notes">Notes: Dark Cocoa • Roasted Almond • Caramel</p>
+          <p class="desc">Full-bodied dark roast crafted for rich, syrupy espresso shots and creamy lattes.</p>
+          <div class="product-footer">
+            <span class="price">$16.50</span>
+            <button class="btn-small order-btn" data-product="Velvet Midnight Espresso">Add to Bag</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-badge">Single Origin</div>
+          <div class="product-icon">🌿</div>
+          <h3>Ethiopian Yirgacheffe</h3>
+          <p class="notes">Notes: Jasmine • Bergamot • Honey</p>
+          <p class="desc">Bright, floral light-medium roast ideal for crisp pour-over and AeroPress mornings.</p>
+          <div class="product-footer">
+            <span class="price">$18.00</span>
+            <button class="btn-small order-btn" data-product="Ethiopian Yirgacheffe">Add to Bag</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-badge">Smooth Classic</div>
+          <div class="product-icon">🍯</div>
+          <h3>Golden Hazelnut Roast</h3>
+          <p class="notes">Notes: Toasted Hazelnut • Milk Chocolate • Vanilla</p>
+          <p class="desc">Balanced medium roast with low acidity and a naturally sweet, nutty finish.</p>
+          <div class="product-footer">
+            <span class="price">$15.75</span>
+            <button class="btn-small order-btn" data-product="Golden Hazelnut Roast">Add to Bag</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">The Brewly Standard</span>
+        <h2>Why Coffee Lovers Choose Us</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Ethically Sourced</h3>
+          <p>We pay above fair-trade prices directly to sustainable growers around the globe.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3>Roasted to Order</h3>
+          <p>Your coffee is roasted within 24 hours of your order so peak flavor arrives at your door.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Eco Packaging</h3>
+          <p>One-way degassing valves lock in aroma inside 100% recyclable, plastic-free pouches.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🚚</div>
+          <h3>Free Express Delivery</h3>
+          <p>Complimentary doorstep shipping on all orders over $30 with flexible subscriptions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section bg-cream" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Testimonials</span>
+        <h2>What Our Daily Sippers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Velvet Midnight Espresso completely replaced my daily café run. The crema is unreal!"</p>
+          <div class="author">
+            <strong>Aarav Sharma</strong>
+            <span>Home Barista</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"You can actually smell the freshness the moment you open the bag. Ethiopian Yirgacheffe is perfection."</p>
+          <div class="author">
+            <strong>Priya Nair</strong>
+            <span>Product Designer</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Fast delivery, clean packaging, and super consistent medium roasts every single week."</p>
+          <div class="author">
+            <strong>Rohan Verma</strong>
+            <span>Software Engineer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter Section -->
+  <section class="contact section" id="contact">
+    <div class="container contact-wrapper">
+      <div class="contact-info">
+        <span class="section-subtitle">Stay Caffeinated</span>
+        <h2>Get 15% Off Your First Bag</h2>
+        <p>Subscribe for fresh roast drops, brewing guides, or send us a quick message below.</p>
+        <div class="contact-details">
+          <p>📍 42 Roastery Lane, Indiranagar, Bengaluru</p>
+          <p>✉️ hello@brewlycoffee.com</p>
+          <p>📞 +91 98765 43210</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Preferred Roast / Message</label>
+          <textarea id="message" rows="3" placeholder="Tell us your favorite brew style..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Claim 15% Off & Send</button>
+        <p class="form-feedback" id="form-feedback"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">Brewly<span>☕</span></a>
+        <p>Small-batch specialty coffee roasted for clarity, warmth, and everyday rituals.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <a href="#contact">Instagram</a>
+        <a href="#contact">LinkedIn</a>
+        <a href="#contact">GitHub</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Brewly Coffee Co. | Built for CodSoft Web Development Internship (Level 1 – Task 2)</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
